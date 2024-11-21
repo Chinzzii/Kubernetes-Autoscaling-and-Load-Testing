@@ -9,5 +9,5 @@ import (
 // StatusHandler returns the server status
 func StatusHandler(w http.ResponseWriter, r *http.Request) {
 	response := map[string]string{"status": "Server is running"}
-	JSONResponse(w, http.StatusOK, response)
+	utils.JSONResponse(w, http.StatusOK, response)
 }

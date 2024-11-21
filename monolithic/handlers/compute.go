@@ -23,5 +23,5 @@ func ComputeHandler(w http.ResponseWriter, r *http.Request) {
 		"result":  result,
 		"elapsed": elapsed.String(),
 	}
-	JSONResponse(w, http.StatusOK, response)
+	utils.JSONResponse(w, http.StatusOK, response)
 }

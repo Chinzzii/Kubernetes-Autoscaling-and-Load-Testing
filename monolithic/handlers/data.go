@@ -12,5 +12,5 @@ func DataHandler(w http.ResponseWriter, r *http.Request) {
 		"message": "Here is some data",
 		"items":   []string{"item1", "item2", "item3"},
 	}
-	JSONResponse(w, http.StatusOK, data)
+	utils.JSONResponse(w, http.StatusOK, data)
 }
